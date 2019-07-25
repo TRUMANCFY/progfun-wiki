@@ -102,6 +102,12 @@ The associativity of an operator is determined by its last character: Right-asso
    
 Note that assignment operators have lowest precedence. (Read Scala Language Specification 2.9 sections 6.12.3, 6.12.4 for more info)
 
+- :: this operator is cons, which means contruction. Add data to the head of the list to build up a new list.
+  - ```x::list```, x is the first element element added to the head of the list, no matter x is list or not, namely, the length of the new list is the length of the original list plus 1.
+- The difference between +: and :+ is that +: is to add element in the front of the the list, and :+ is to add element at the end of the list. Just remember that : is near to the list.
+- ++ connect two sets: list1 + list2
+- ::: can only be used to connect two List
+
 ## Class hierarchies
 ```scala
     abstract class TopLevel {    // abstract class  
